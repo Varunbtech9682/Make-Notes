@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="navbar">NotePad</div>
+    <div class="container">
+        <div class="note-container">
+            <h2 id="heading">Dhis is a note</h2>
+            <hr>
+            <h4>Robert</h4>
+            <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, ea modi iste, quidem voluptatem neque numquam beatae expedita non eos accusantium tempore nobis nemo! Praesentium harum eligendi unde ullam vero!</p>
+            <button class="delbutton" onclick="deletenote(event)">Delete</button>
+        </div>
+    </div>
+    
+    
+    <button class="popupbutton" id="add-popup-button">+</button>
+
+
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add Note</h2>
+        <form>
+            <input type="text" placeholder="Enter a Title" id="note-title"> <br>
+            <input type="text" placeholder="Enter a Author Name" id="note-author-name"> <br>
+            <textarea name="textarea" id="textarea" cols="20" rows="5" placeholder="Short description for Note" ></textarea>
+            <br>
+            <button id="add-text">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
