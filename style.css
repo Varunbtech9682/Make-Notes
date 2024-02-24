@@ -85,6 +85,30 @@ hr{
 }
 
 
+
+.popupbutton::before {
+  content: attr(title); /* Use the 'title' attribute as the content */
+  position: absolute; /* Position the tooltip */
+  bottom: 100%; /* Position it above the button */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color of the tooltip */
+  color: white; /* Text color */
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  white-space: nowrap; /* Prevent line breaks */
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Ensure the tooltip doesn't interfere with button clicks */
+  transition: opacity 0.3s; /* Add transition effect */
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+.popupbutton:hover::before {
+  opacity: 1; /* Show the tooltip on hover */
+}
+
+
 .popup-overlay{
     background-color: black;
     height: 100%;
