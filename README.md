@@ -1,1 +1,1 @@
-![Make notes](images/preview.png)
+![Make notes](images/preview.jpg)
